@@ -1,0 +1,675 @@
+/* ========================================
+   Glothm Careers Page - Specific Styles
+   ======================================== */
+
+/* Career Hero Section */
+.career-hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 100px 0 50px;
+    position: relative;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 255, 0, 0.08) 0%, transparent 70%);
+}
+
+.career-hero .hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.career-hero .hero-title {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    margin-bottom: 2rem;
+}
+
+.career-hero .hero-description {
+    font-size: 1.375rem;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+.career-stats {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.career-stats .stat {
+    text-align: center;
+}
+
+.career-stats .stat i {
+    font-size: 2.5rem;
+    color: var(--primary-green);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.career-stats .stat h3 {
+    font-size: 2.5rem;
+    color: var(--primary-green);
+    margin-bottom: 0.5rem;
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2s infinite;
+}
+
+.scroll-indicator i {
+    font-size: 2rem;
+    color: var(--primary-green);
+    opacity: 0.7;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+    40% { transform: translateX(-50%) translateY(-10px); }
+    60% { transform: translateX(-50%) translateY(-5px); }
+}
+
+/* Why Join Section */
+.why-join-section {
+    padding: 100px 0;
+    background: var(--darker-bg);
+}
+
+.benefit-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 2.5rem;
+    height: 100%;
+    transition: var(--transition-base);
+    position: relative;
+    overflow: hidden;
+}
+
+.benefit-card::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(0, 255, 0, 0.1) 0%, transparent 70%);
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.benefit-card:hover::before {
+    opacity: 1;
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(0, 255, 0, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 255, 0, 0.1);
+}
+
+.benefit-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, rgba(0, 255, 0, 0.2), rgba(0, 255, 0, 0.1));
+    border: 2px solid rgba(0, 255, 0, 0.3);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    transition: var(--transition-base);
+}
+
+.benefit-card:hover .benefit-icon {
+    transform: rotate(5deg) scale(1.1);
+    background: linear-gradient(135deg, rgba(0, 255, 0, 0.3), rgba(0, 255, 0, 0.2));
+}
+
+.benefit-icon i {
+    font-size: 2.5rem;
+    color: var(--primary-green);
+}
+
+/* Culture Section */
+.culture-section {
+    padding: 100px 0;
+    background: var(--card-bg);
+    position: relative;
+    overflow: hidden;
+}
+
+.culture-text {
+    font-size: 1.125rem;
+    color: var(--text-gray);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.culture-values {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.value-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    transition: var(--transition-base);
+}
+
+.value-item:hover {
+    background: rgba(0, 255, 0, 0.05);
+    transform: translateX(10px);
+}
+
+.value-item i {
+    font-size: 1.5rem;
+    color: var(--primary-green);
+    margin-top: 5px;
+}
+
+.value-item h4 {
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+}
+
+.value-item p {
+    color: var(--text-gray);
+    margin: 0;
+}
+
+/* Culture Visual */
+.culture-visual {
+    position: relative;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.culture-card {
+    position: absolute;
+    background: var(--dark-bg);
+    border: 1px solid rgba(0, 255, 0, 0.3);
+    border-radius: 15px;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+    box-shadow: var(--shadow-lg);
+}
+
+.culture-card.floating {
+    animation: float 4s ease-in-out infinite;
+}
+
+.culture-card:nth-child(1) { top: 10%; left: 10%; }
+.culture-card:nth-child(2) { top: 20%; right: 15%; }
+.culture-card:nth-child(3) { bottom: 30%; left: 20%; }
+.culture-card:nth-child(4) { bottom: 10%; right: 10%; }
+
+.culture-card i {
+    font-size: 1.5rem;
+    color: var(--primary-green);
+}
+
+.culture-grid {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    opacity: 0.1;
+}
+
+.grid-item {
+    background: linear-gradient(135deg, transparent, rgba(0, 255, 0, 0.2));
+    border: 1px solid rgba(0, 255, 0, 0.3);
+    border-radius: 20px;
+}
+
+/* Openings Section */
+.openings-section {
+    padding: 100px 0;
+    background: var(--darker-bg);
+}
+
+.no-jobs-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.no-jobs-card {
+    background: var(--card-bg);
+    border: 2px solid rgba(0, 255, 0, 0.2);
+    border-radius: 24px;
+    padding: 4rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.no-jobs-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: var(--gradient-primary);
+}
+
+.no-jobs-icon {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, rgba(0, 255, 0, 0.2), rgba(0, 255, 0, 0.1));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.no-jobs-icon i {
+    font-size: 3rem;
+    color: var(--primary-green);
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+}
+
+.no-jobs-card h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.no-jobs-card .lead {
+    font-size: 1.25rem;
+    color: var(--text-gray);
+    margin-bottom: 3rem;
+}
+
+.future-roles {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+}
+
+.future-roles h4 {
+    margin-bottom: 1.5rem;
+    color: var(--primary-green);
+}
+
+.role-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.role-tag {
+    background: rgba(0, 255, 0, 0.1);
+    border: 1px solid rgba(0, 255, 0, 0.3);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 0.875rem;
+    color: var(--primary-green);
+    transition: var(--transition-base);
+}
+
+.role-tag:hover {
+    background: rgba(0, 255, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* Talent Network Form */
+.talent-network {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: rgba(0, 255, 0, 0.05);
+    border-radius: 16px;
+    text-align: left;
+}
+
+.talent-network h4 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--primary-green);
+}
+
+.talent-network p {
+    text-align: center;
+    color: var(--text-gray);
+    margin-bottom: 2rem;
+}
+
+.talent-form .form-control {
+    background: var(--dark-bg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
+    padding: 14px 20px;
+    border-radius: 10px;
+    transition: var(--transition-base);
+}
+
+.talent-form .form-control:focus {
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 3px rgba(0, 255, 0, 0.1);
+}
+
+.file-upload {
+    position: relative;
+    width: 100%;
+}
+
+.file-upload label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    background: var(--dark-bg);
+    border: 2px dashed rgba(0, 255, 0, 0.3);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: var(--transition-base);
+}
+
+.file-upload label:hover {
+    border-color: var(--primary-green);
+    background: rgba(0, 255, 0, 0.05);
+}
+
+.file-upload input[type="file"] {
+    display: none;
+}
+
+.file-upload i {
+    font-size: 2rem;
+    color: var(--primary-green);
+}
+
+/* Hiring Process Section */
+.process-section {
+    padding: 100px 0;
+    background: var(--card-bg);
+}
+
+.process-timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 4rem auto;
+}
+
+.process-timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--primary-green), transparent);
+    opacity: 0.3;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.timeline-number {
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-primary);
+    color: var(--dark-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.3);
+}
+
+.timeline-content {
+    background: var(--dark-bg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 2rem;
+    width: 45%;
+    position: relative;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: auto;
+}
+
+.timeline-content h4 {
+    margin-bottom: 1rem;
+    color: var(--primary-green);
+}
+
+.timeline-content p {
+    color: var(--text-gray);
+    margin-bottom: 1rem;
+}
+
+.timeline-duration {
+    display: inline-block;
+    background: rgba(0, 255, 0, 0.1);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    color: var(--primary-green);
+}
+
+/* Life at Glothm Section */
+.life-section {
+    padding: 100px 0;
+    background: var(--darker-bg);
+}
+
+.life-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 250px);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.life-card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: var(--transition-base);
+}
+
+.life-card.large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.life-image {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 255, 0, 0.2), rgba(0, 255, 0, 0.05));
+    position: relative;
+}
+
+.life-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    transform: translateY(100px);
+    transition: var(--transition-base);
+}
+
+.life-card:hover .life-overlay {
+    transform: translateY(0);
+}
+
+.life-overlay h3 {
+    color: var(--primary-green);
+    margin-bottom: 0.5rem;
+}
+
+.life-overlay p {
+    color: var(--text-gray);
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 100px 0;
+    background: var(--card-bg);
+}
+
+.accordion-item {
+    background: var(--dark-bg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 1rem;
+    border-radius: 12px !important;
+    overflow: hidden;
+}
+
+.accordion-button {
+    background: var(--dark-bg);
+    color: var(--text-light);
+    font-weight: 600;
+    padding: 1.5rem;
+    font-size: 1.125rem;
+    border: none;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background: rgba(0, 255, 0, 0.1);
+    color: var(--primary-green);
+}
+
+.accordion-button::after {
+    filter: brightness(0) invert(1);
+}
+
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(0) saturate(100%) invert(68%) sepia(97%) saturate(1405%) hue-rotate(86deg) brightness(117%) contrast(119%);
+}
+
+.accordion-body {
+    padding: 1.5rem;
+    color: var(--text-gray);
+    line-height: 1.8;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .career-stats {
+        gap: 2rem;
+    }
+    
+    .timeline-item {
+        flex-direction: column !important;
+    }
+    
+    .timeline-item:nth-child(even) {
+        flex-direction: column !important;
+    }
+    
+    .timeline-content {
+        width: 100%;
+        margin-top: 2rem;
+    }
+    
+    .timeline-item:nth-child(even) .timeline-content {
+        margin-left: 0;
+    }
+    
+    .process-timeline::before {
+        left: 30px;
+    }
+    
+    .timeline-number {
+        left: 30px;
+    }
+    
+    .life-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 250px);
+    }
+    
+    .life-card.large {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .career-hero .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .career-hero .hero-description {
+        font-size: 1.125rem;
+    }
+    
+    .no-jobs-card {
+        padding: 2rem;
+    }
+    
+    .culture-visual {
+        height: 300px;
+    }
+    
+    .culture-card {
+        position: static;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .career-stats {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .role-tags {
+        flex-direction: column;
+    }
+    
+    .role-tag {
+        width: 100%;
+        text-align: center;
+    }
+}

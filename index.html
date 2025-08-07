@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Glothm - Leading software development company specializing in Web Development, AI, Data Science, Robotics, and Mobile Development">
+    <meta name="keywords" content="software development, AI, web development, robotics, data science, Ghana, UK">
+    <title>Glothm - Pioneering Digital Innovation</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.0/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="logo-text">
+                    <span class="green">&lt;g/&gt;</span>lothm
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <button class="btn-cta ms-3">Get Started</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content" data-aos="fade-right">
+                        <span class="hero-badge">Innovation • Excellence • Impact</span>
+                        <h1 class="hero-title">
+                            Transforming Ideas Into
+                            <span class="text-gradient">Digital Reality</span>
+                        </h1>
+                        <p class="hero-description">
+                            We architect cutting-edge solutions in AI, Web Development, Data Science, and Robotics. 
+                            From concept to deployment, we build technology that drives the future.
+                        </p>
+                        <div class="hero-buttons">
+                            <button class="btn-primary-custom" onclick="location.href='#portfolio'">Explore Our Work</button>
+                            <button class="btn-secondary-custom" onclick="location.href='#contact'">
+                                <i class="fas fa-envelope"></i> Get In Touch
+                            </button>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <h3>50+</h3>
+                                <p>Projects Delivered</p>
+                            </div>
+                            <div class="stat">
+                                <h3>2</h3>
+                                <p>Global Offices</p>
+                            </div>
+                            <div class="stat">
+                                <h3>99%</h3>
+                                <p>Client Satisfaction</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-visual" data-aos="fade-left">
+                        <div class="floating-card">
+                            <div class="code-window">
+                                <div class="window-header">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </div>
+                                <pre class="code-content">
+<span class="keyword">class</span> <span class="class-name">Glothm</span> {
+    <span class="keyword">constructor</span>() {
+        <span class="keyword">this</span>.innovation = <span class="string">'∞'</span>;
+        <span class="keyword">this</span>.excellence = <span class="boolean">true</span>;
+    }
+    
+    <span class="function">transform</span>(idea) {
+        <span class="keyword">return</span> <span class="keyword">new</span> <span class="class-name">DigitalReality</span>(idea);
+    }
+}</pre>
+                            </div>
+                        </div>
+                        <div class="orbit-container">
+                            <div class="orbit orbit-1"></div>
+                            <div class="orbit orbit-2"></div>
+                            <div class="orbit orbit-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">What We Do</span>
+                <h2 class="section-title">Services That Define Excellence</h2>
+                <p class="section-subtitle">Comprehensive solutions tailored to accelerate your digital transformation</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Artificial Intelligence</h3>
+                        <p>Advanced AI solutions including machine learning, NLP, computer vision, and predictive analytics</p>
+                        <ul class="service-features">
+                            <li>Custom AI Models</li>
+                            <li>ChatGPT Integration</li>
+                            <li>Intelligent Automation</li>
+                        </ul>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Scalable web applications built with modern frameworks and cloud-native architectures</p>
+                        <ul class="service-features">
+                            <li>Progressive Web Apps</li>
+                            <li>E-commerce Platforms</li>
+                            <li>API Development</li>
+                        </ul>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Robotics & IoT</h3>
+                        <p>Intelligent robotics solutions and IoT systems for industrial and consumer applications</p>
+                        <ul class="service-features">
+                            <li>Autonomous Systems</li>
+                            <li>Sensor Integration</li>
+                            <li>Edge Computing</li>
+                        </ul>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Data Science</h3>
+                        <p>Transform raw data into actionable insights with advanced analytics and visualization</p>
+                        <ul class="service-features">
+                            <li>Big Data Analytics</li>
+                            <li>Business Intelligence</li>
+                            <li>Data Pipelines</li>
+                        </ul>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile Development</h3>
+                        <p>Native and cross-platform mobile applications that deliver exceptional user experiences</p>
+                        <ul class="service-features">
+                            <li>iOS & Android Apps</li>
+                            <li>React Native</li>
+                            <li>Flutter Development</li>
+                        </ul>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <h3>Tech Consultation</h3>
+                        <p>Strategic technology consulting to align your business goals with digital innovation</p>
+                        <ul class="service-features">
+                            <li>Digital Strategy</li>
+                            <li>Architecture Design</li>
+                            <li>Tech Stack Advisory</li>
+                        </ul>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Our Work</span>
+                <h2 class="section-title">Transformative Projects</h2>
+                <p class="section-subtitle">Real solutions creating real impact across industries</p>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item large" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <div class="portfolio-overlay">
+                                <span class="project-category">Healthcare AI</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>TutorMed</h3>
+                            <p>A global online medical community that simplifies complex health concepts for healthcare professionals worldwide</p>
+                            <div class="tech-stack">
+                                <span>Vue</span>
+                                <span>Django</span>
+                                <span>AI/ML</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                            <div class="portfolio-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>10K+ Users</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-globe"></i>
+                                    <span>5+ Countries</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <div class="portfolio-overlay">
+                                <span class="project-category">AI Platform</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Go4Health AI</h3>
+                            <p>Connecting international patients with affordable medical treatments using AI matching systems</p>
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>PyTorch</span>
+                                <span>AWS</span>ss
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <div class="portfolio-overlay">
+                                <span class="project-category">Non-Profit</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Remedy Foundation</h3>
+                            <p>Improving healthcare access in underserved African communities</p>
+                            <div class="tech-stack">
+                                <span>Next.js</span>
+                                <span>PostgreSQL</span>
+                                <span>Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="tech-stack-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Technologies</span>
+                <h2 class="section-title">Powered by Innovation</h2>
+            </div>
+            
+            <div class="tech-marquee">
+                <div class="tech-track">
+                    <div class="tech-item"><i class="fab fa-react"></i> Django</div>
+                    <div class="tech-item"><i class="fab fa-python"></i> Vue</div>
+                    <div class="tech-item"><i class="fab fa-node-js"></i> PyTorch</div>
+                    <div class="tech-item"><i class="fab fa-react"></i> React</div>
+                    <div class="tech-item"><i class="fab fa-python"></i> Python</div>
+                    <div class="tech-item"><i class="fab fa-node-js"></i> Node.js</div>
+                    <div class="tech-item"><i class="fab fa-aws"></i> AWS</div>
+                    <div class="tech-item"><i class="fab fa-docker"></i> Docker</div>
+                    <div class="tech-item"><i class="fas fa-brain"></i> TensorFlow</div>
+                    <div class="tech-item"><i class="fab fa-angular"></i> Angular</div>
+                    <div class="tech-item"><i class="fas fa-database"></i> MongoDB</div>
+                    <div class="tech-item"><i class="fab fa-google"></i> GCP</div>
+                    <div class="tech-item"><i class="fab fa-microsoft"></i> Azure</div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="tech-item"><i class="fab fa-react"></i> React</div>
+                    <div class="tech-item"><i class="fab fa-python"></i> Python</div>
+                    <div class="tech-item"><i class="fab fa-node-js"></i> Node.js</div>
+                    <div class="tech-item"><i class="fab fa-aws"></i> AWS</div>
+                    <div class="tech-item"><i class="fab fa-docker"></i> Docker</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="about-content">
+                        <span class="section-label">About Glothm</span>
+                        <h2 class="section-title">Engineering Tomorrow's Digital Landscape</h2>
+                        <p class="about-text">
+                            Founded with a vision to bridge the gap between innovative technology and real-world applications, 
+                            Glothm stands at the forefront of digital transformation. With offices in Ghana and the UK, 
+                            we bring global perspectives to local challenges.
+                        </p>
+                        <p class="about-text">
+                            Our team of experts specializes in creating solutions that don't just meet today's needs but 
+                            anticipate tomorrow's challenges. From AI-powered healthcare platforms to revolutionary robotics systems, 
+                            we're building the infrastructure of the future.
+                        </p>
+                        <div class="about-features">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Global Presence</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>24/7 Support</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Agile Development</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Innovation First</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="about-visual">
+                        <div class="location-cards">
+                            <div class="location-card">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h4>Ghana Office</h4>
+                                <p>Accra, Ghana</p>
+                            </div>
+                            <div class="location-card">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h4>UK Office</h4>
+                                <p>London, United Kingdom</p>
+                            </div>
+                        </div>
+                        <div class="team-preview">
+                            <h4>20+ Expert Developers</h4>
+                            <div class="team-avatars">
+                                <div class="avatar"></div>
+                                <div class="avatar"></div>
+                                <div class="avatar"></div>
+                                <div class="avatar"></div>
+                                <div class="avatar more">+16</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Ready to Transform Your Ideas?</h2>
+                <p>Join industry leaders who trust Glothm to deliver exceptional digital solutions</p>
+                <div class="cta-buttons">
+                    <button class="btn-primary-custom" onclick="location.href='#contact'">Start Your Project</button>
+                    <button class="btn-secondary-custom" onclick="location.href='#services'">View Our Services</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Get In Touch</span>
+                <h2 class="section-title">Let's Build Something Amazing</h2>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4" data-aos="fade-right">
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <i class="fas fa-envelope"></i>
+                            <h4>Email</h4>
+                            <p><a href="mailto:contact.glothm@gmail.com">contact.glothm@gmail.com</a></p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-phone"></i>
+                            <h4>Phone</h4>
+                            <p>Ghana: <a href="tel:+233204980856">+233 20 498 0856</a></p>
+                            <p>UK: <a href="tel:+447555824576">+44 7555 824576</a></p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-clock"></i>
+                            <h4>Business Hours</h4>
+                            <p>Mon - Fri: 9:00 AM - 6:00 PM GMT</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-8" data-aos="fade-left">
+                    <form class="contact-form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="tel" class="form-control" placeholder="Phone Number">
+                            </div>
+                            <div class="col-md-6">
+                                <select class="form-control">
+                                    <option>Select Service</option>
+                                    <option>AI Development</option>
+                                    <option>Web Development</option>
+                                    <option>Mobile Development</option>
+                                    <option>Data Science</option>
+                                    <option>Robotics</option>
+                                    <option>Consultation</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <textarea class="form-control" rows="6" placeholder="Tell us about your project"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-primary-custom">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <div class="logo-text">
+                            <span class="green">&lt;g/&gt;</span>lothm
+                        </div>
+                        <p>Pioneering digital innovation across continents</p>
+                        <div class="social-links">
+                            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h5>Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h5>Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="#services">AI Solutions</a></li>
+                        <li><a href="#services">Web Development</a></li>
+                        <li><a href="#services">Mobile Apps</a></li>
+                        <li><a href="#services">Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h5>Resources</h5>
+                    <ul class="footer-links">
+                        <li><a href="#portfolio">Case Studies</a></li>
+                        <li><a href="#services">Our Process</a></li>
+                        <li><a href="#about">Company</a></li>
+                        <li><a href="#contact">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h5>Legal</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Glothm. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.0/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
